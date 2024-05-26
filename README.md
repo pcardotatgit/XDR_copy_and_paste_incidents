@@ -51,6 +51,6 @@ If you don't want to paste every Incident sightings and select only some of them
 
 ## Utils
 
-The **0-ask_for_a_token.py** asks for an XDR token and stores it as **cr_token.txt**. We don't need to run it for running the other scripts
+The **0-ask_for_a_token.py** asks for an XDR token and stores it as **cr_token.txt**. We don't need to run it for running the other scripts.
 
 The **incident-summary_json_to_dtree_graph.py** that helps to visualize the **./incident_summary/incident_summary.json** file into a graph into the browser. It reads the **./incident_summary/incident_summary.json** and creates a clickable tree graph into the **./dtree** subfolder. Once the graph created open the **./dtree/index.html**
