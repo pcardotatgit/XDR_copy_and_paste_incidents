@@ -182,7 +182,7 @@ def get_incidents(host,access_token,client_id,client_password,host_for_token):
     
 def get_incident_summary(host,access_token,incident_id):
     indicator_id_list=[]
-    incident_dir_path='result'
+    incident_dir_path='incident_summary'
     fb = open('./'+incident_dir_path+'/incident-summary.json', "w")
     headers = {'Authorization':'Bearer {}'.format(access_token), 'Content-Type':'application/json', 'Accept':'application/json'}
     url = f"{host}/iroh/private-intel/incident-summary/search?id={incident_id}"
@@ -258,6 +258,7 @@ def main():
     print(yellow('STEP 3 - Select an Incident',bold=True))
     print()
     incident_ID=get_incidents(host,access_token,client_id,client_password,host_for_token)
+    access_token=read_ctr_token()
     print()
     print("---- Selected Incident is : \n",cyan(incident_ID,bold=True))
     print()
