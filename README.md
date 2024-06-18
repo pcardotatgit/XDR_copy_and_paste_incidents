@@ -43,6 +43,12 @@ We paste the following objects into the destination XDR tenant :
 
 Actually the script reads the above objects from the **incident_summary.json** file and create these objects into the destination tenant. It is not just copy and pasting the existing JSON source definitions.
 
+## IMPORTANT WARNINGS !!!
+
+The **incident_summary.json** collected from the source XDR Tenant by the **1-select_and_get_incident-summary_from a_source_tenant.py** might contain the original malicious CLI partners used by hackers. These paterns might be detected by your Laptop Antimalware !!. And a severe alerts might be generated depending on the dangerousity of these paterns.
+
+So for this reason it is preferable to not use Your company laptop for running the **1-select_and_get_incident-summary_from a_source_tenant.py** but a dedicated other laptop.
+
 ## Miscelaneous
 
 The **SOURCE_FOR_EVERYTHING** designate a new source value to every create objects. It will help to identify them into the new tenant.
