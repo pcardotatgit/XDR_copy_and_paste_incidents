@@ -29,7 +29,9 @@ Step 2 : Run the **1-select_and_get_incident-summary_from a_source_tenant.py** i
 
 Step 3 : edit the **config.txt** file again and update the variable value ( client_id, client_password, and URLs ), with the values needed to connect to the **DESTINATION** XDR tenant.
 
-Step 4 : Run the **2_paste_the_incident_into_a_destination_tenant.py** in order to paste the Incident from the **./incident_summary/incident_summary.json** file into the destination tenant.
+Step 4 : Then you must run the **0-ask_for_a_token.py** in order to ask for a new token for granting access to the new tenant. 
+
+Step 5 : finally run the **2_paste_the_incident_into_a_destination_tenant.py** in order to paste the Incident from the **./incident_summary/incident_summary.json** file into the destination tenant.
 
 ## what do we paste into the destination tenant ?
 
